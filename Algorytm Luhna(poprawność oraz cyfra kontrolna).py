@@ -21,7 +21,7 @@ def checksum(numer_przemnozony):
 s= checksum(numer_przemnozony)
 #print(s)
 
-def modten(s):
+def modten(s, pierwotny_numer):
     if s%10==0:
         print(f'Podany numer karty {pierwotny_numer} jest prawidłowy.')
     else:
@@ -38,6 +38,6 @@ if len(num)==15:
     print("A więc szukasz cyfry kontrolnej")   
     print(f'Jest nią cyfra: {cyfra_kontrolna(s)}.') 
 elif len(num)==16:
-    modten(s)
+    modten(s, pierwotny_numer)
 elif len(num)!=15 and len(num)!=16:
     print("Podałeś złą ilość cyfr")
